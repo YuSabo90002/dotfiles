@@ -1,0 +1,66 @@
+URxvt*termName:  xterm-256color
+URxvt*depth:  24
+URxvt*saveLIne:  300000
+URxvt*geometry:  120x35
+URxvt*perl-ext-common: default,matcher,clipboard-osc
+!URxvt*perl-ext-common: default,matcher,clipboard-osc,xim-onthespot
+URxvt*imLocale:  en_US.UTF-8
+URxvt*perl-ext: xim-onthespot
+URxvt*inputMethod: fcitx
+URxvt*preeditType: OnTheSpot
+!URxvt*preeditType: OverTheSpot 
+URxvt*url-launcher: chromium
+URxvt*matcher*button: 1
+
+! molokai inspired colors (darker version)
+! vim: set ft=xdefaults:
+
+URxvt*background:   #000000
+URxvt*foreground:   #d0d0d0
+
+URxvt*cursorColor:  #d0d0d0
+
+URxvt*colorBD:      #3579a8
+URxvt*colorUL:      #4eb4fa
+
+!black
+URxvt*color0:       #000000
+URxvt*color8:       #1c1c1c
+
+!red
+URxvt*color1:       #960050
+URxvt*color9:       #ff0090
+
+!green
+URxvt*color2:       #66aa11
+URxvt*color10:      #80ff00
+
+!yellow
+URxvt*color3:       #c47f2c
+URxvt*color11:      #ffba68
+
+!blue
+URxvt*color4:       #30309b
+URxvt*color12:      #5f5fee
+
+!magenta
+URxvt*color5:       #7e40a5
+URxvt*color13:      #bb88dd
+
+!cyan
+URxvt*color6:       #3579a8
+URxvt*color14:      #4eb4fa
+
+!white
+URxvt*color7:       #5f5f5f
+URxvt*color15:      #d0d0d0
+
+URxvt*lefterSpace: -1
+URxvt.font:              xft:serif:size=12:antialiase=true,xft:DejaVu Sans Mono:size=13
+URxvt.boldFont:          xft:serif:bold:size=12:antialiase=true
+URxvt.italicFont:        xft:serif:italic:size=12:antialiase=true
+URxvt.bolditalicFont:    xft:serif:bold:italic:size=12:antialiase=true
+!URxvt.imFont:            7x14
+urxvt*shading: 60
+URxvt*inheritPixmap: true
+URxvt*dynamicColors: on

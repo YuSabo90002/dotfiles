@@ -1,0 +1,26 @@
+! 各ファイルをカンマ区切りで読み込む 
+URxvt.perl-ext-common: keyboard-select,url-select,clipboard 
+
+URxvt.iso14755: false
+
+! キーボードセレクトモードを使う 
+URxvt.keysym.M-Escape: perl:keyboard-select:activate 
+! サーチモードを M-s に割り当てる 
+URxvt.keysym.M-s: perl:keyboard-select:search 
+
+! url セレクトモードを使う 
+URxvt.keysym.M-u: perl:url-select:select_next 
+! マウスの左クリックで url を開く (デフォルトは 2) 
+URxvt.url-select.button:1 
+! url は firefox の新しいタブで開く 
+URxvt.url-select.launcher:chromium -new-tab 
+! url にはアンダーラインをつける 
+URxvt.url-select.underline:true 
+
+! クリップボードにキーバインドを割り当てる 
+URxvt.keysym.Shift-Control-C: perl:clipboard:copy 
+URxvt.keysym.Shift-Control-V: perl:clipboard:paste 
+URxvt.keysym.Shift-Control-C-V: perl:clipboard:paste_escaped
+! scrollbar style - rxvt (default), plain (most compact), next, or xterm
+URxvt.scrollstyle:plain
+URxvt.scrollBar_right:true
