@@ -1,3 +1,5 @@
 export SUDO_EDITOR=rvim
 export ZIPINFOOPT="-OCP932"
 export UNZIPOPT="-OCP932"
+eval `ssh-agent`
+ssh-add
